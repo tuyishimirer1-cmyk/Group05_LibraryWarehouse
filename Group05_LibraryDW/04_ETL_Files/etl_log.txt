@@ -1,0 +1,64 @@
+2026-02-03 18:20:17,342 - INFO - Connecting to database...
+2026-02-03 18:20:17,342 - INFO - [OK] Connected
+2026-02-03 18:20:17,342 - INFO - 
+Verifying staging data...
+2026-02-03 18:20:17,355 - INFO -   staging_book_transactions: 15 rows
+2026-02-03 18:20:17,355 - INFO -   staging_digital_usage: 14 rows
+2026-02-03 18:20:17,356 - INFO -   staging_room_bookings: 15 rows
+2026-02-03 18:20:17,356 - INFO - 
+Clearing existing data...
+2026-02-03 18:20:17,356 - INFO -   Cleared fact_library_usage
+2026-02-03 18:20:17,356 - INFO - 
+Loading dimension tables...
+2026-02-03 18:20:17,356 - INFO - Loading dim_date...
+2026-02-03 18:20:17,356 - INFO -   Cleared dim_date
+2026-02-03 18:20:17,356 - WARNING - Could not parse date: 2024-15-02
+2026-02-03 18:20:17,356 - INFO -   Date range: 2024-01-04 to 2024-04-01
+2026-02-03 18:20:17,383 - INFO - [OK] Loaded 89 dates
+2026-02-03 18:20:17,386 - INFO - Loading dim_student...
+2026-02-03 18:20:17,392 - INFO -   Cleared dim_student
+2026-02-03 18:20:17,397 - INFO -   Standardizing department names...
+2026-02-03 18:20:17,407 - INFO -   Standardized 10 department names
+2026-02-03 18:20:17,412 - INFO - [OK] Loaded 14 students
+2026-02-03 18:20:17,414 - INFO - Loading dim_resource...
+2026-02-03 18:20:17,415 - INFO -   Cleared dim_resource
+2026-02-03 18:20:17,428 - INFO - [OK] Loaded 15 resources
+2026-02-03 18:20:17,428 - INFO - Loading dim_location...
+2026-02-03 18:20:17,428 - INFO -   Cleared dim_location
+2026-02-03 18:20:17,432 - INFO -   Standardizing room numbers...
+2026-02-03 18:20:17,433 - INFO -   Standardized: 'R-102' → 'R102'
+2026-02-03 18:20:17,435 - INFO -   Standardized: 'Room201' → 'R201'
+2026-02-03 18:20:17,435 - INFO -   Standardized: 'Room101' → 'R101'
+2026-02-03 18:20:17,435 - INFO -   Standardized: 'R-201' → 'R201'
+2026-02-03 18:20:17,437 - INFO -   Standardized: 'R-101' → 'R101'
+2026-02-03 18:20:17,439 - INFO -   Standardized: 'Room102' → 'R102'
+2026-02-03 18:20:17,439 - INFO -   Standardized: 'R-202' → 'R202'
+2026-02-03 18:20:17,442 - INFO -   Standardized 7 room numbers
+2026-02-03 18:20:17,443 - INFO - [OK] Loaded 11 locations
+2026-02-03 18:20:17,443 - INFO - Loading dim_time_slot...
+2026-02-03 18:20:17,443 - INFO -   Cleared dim_time_slot
+2026-02-03 18:20:17,443 - INFO -   Standardizing time slots...
+2026-02-03 18:20:17,443 - INFO -   Standardized: 'Morning' → 'Morning' (08:00:00 - 12:00:00)
+2026-02-03 18:20:17,443 - INFO -   Standardized: '8AM-10AM' → '8AM-10AM' (08:00:00 - 10:00:00)
+2026-02-03 18:20:17,447 - INFO -   Standardized: 'Evening' → 'Evening' (17:00:00 - 21:00:00)
+2026-02-03 18:20:17,448 - INFO -   Standardized: '12PM-2PM' → '12PM-2PM' (12:00:00 - 14:00:00)
+2026-02-03 18:20:17,450 - INFO -   Standardized: 'Night' → 'Night' (21:00:00 - 23:00:00)
+2026-02-03 18:20:17,453 - INFO -   Standardized: 'Afternoon' → 'Afternoon' (12:00:00 - 17:00:00)
+2026-02-03 18:20:17,455 - INFO -   Standardized 6 time slots
+2026-02-03 18:20:17,458 - INFO - [OK] Loaded 7 time slots
+2026-02-03 18:20:17,459 - INFO - 
+Loading fact table...
+2026-02-03 18:20:17,459 - INFO - Loading fact_library_usage...
+2026-02-03 18:20:17,461 - INFO -   Cleared fact_library_usage
+2026-02-03 18:20:17,462 - INFO -   Loading book transactions...
+2026-02-03 18:20:17,475 - INFO -   [OK] Loaded 15 book records
+2026-02-03 18:20:17,476 - INFO -   Loading digital usage...
+2026-02-03 18:20:17,478 - WARNING - Could not parse date: 2024-15-02
+2026-02-03 18:20:17,483 - INFO -   [OK] Loaded 13 digital records
+2026-02-03 18:20:17,484 - INFO -   Loading room bookings...
+2026-02-03 18:20:17,491 - INFO -   [OK] Loaded 18 room records
+2026-02-03 18:20:17,491 - INFO - [OK] Total fact records: 46
+2026-02-03 18:20:17,491 - INFO - 
+============================================================
+2026-02-03 18:20:17,491 - INFO - [SUCCESS] ETL completed in 0.15 seconds
+2026-02-03 18:20:17,491 - INFO - ============================================================

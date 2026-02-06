@@ -1,0 +1,16 @@
+BookingID,RoomNumber,BookingDate,TimeSlot,StudentID,DurationHours,Purpose
+5001,R101,2024-03-15,Morning,STU-2024-001,2.0,Study
+5002,R-102,2024-03-15,8AM-10AM,STU-2024-002,2.0,Group Project
+5003,Room201,2024-03-20,Evening,STU-2024-006,4.0,Meeting
+5004,R101,2024-02-12,12PM-2PM,STU-2024-001,2.0,Study
+5005,R101,15-Mar-2024,Night,,1.5,Study
+5006,R101,2024-03-15,Morning,STU-2024-001,2.0,Study
+5007,R-102,2024-03-16,Afternoon,STU-2024-003,3.0,Research
+5008,Room101,2024-03-17,Evening,STU-2024-004,2.5,Group Study
+5009,R201,2024-03-18,Morning,STU-2024-005,1.0,Interview Prep
+5010,R-201,2024-03-19,Afternoon,STU-2024-007,4.0,Thesis Writing
+5011,R102,2024-03-20,Evening,STU-2024-008,3.0,Study Group
+5012,R-101,2024-03-21,Night,,2.0,Study
+5013,Room102,2024-03-22,Morning,STU-2024-009,1.5,Presentation Practice
+5014,R201,2024-03-23,Afternoon,STU-2024-010,3.0,Project Meeting
+5015,R-202,2024-03-24,Evening,STU-2024-011,2.0,Study
